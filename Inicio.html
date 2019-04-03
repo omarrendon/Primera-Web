@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="estilosHome.css">
+	<meta charset="utf-8">
+	<script src="InicioJS.js"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/miEstilo.css">
+	<link rel="icon" href="https://img.icons8.com/color/50/000000/hospital-3.png">
+
+	<script src="js/jquery-slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ie10-viewport-bug-workaround.min.js"></script>
+	<style type="text/css">
+		body{
+			position: relative;
+		}
+	</style>
+
+</head>
+<body id="principal">
+	<div id="barraNavegacion">
+		<nav>
+			<a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><img src="Images/menu.png" id="menuLogo"></a>
+			
+			<li><a href="quienesSomos.html" style="color: #FFFFFF;">¿Quiénes somos?</a></li>
+			<li><a href="Login.html" style="color: #FFFFFF;">Iniciar sesion</a></li>
+			<li><a href="Login.html" style="color: #FFFFFF;">Registrarse</a></li>
+			<li><a href="contacto.html" style="color: #FFFFFF;">Contáctanos</a></li>
+			<li><a href="preguntasFrecuentes.html" style="color: #FFFFFF;">Preguntas Frecuentes</a></li>
+			
+		</nav>
+	</div>
+	<div id="menuLateral">
+		<div id="sidebar" class="sidebar">
+			<a href="#" class="boton-cerrar" onclick="ocultar()">&times;</a>
+			<ul class="menu">
+				<li><a href="#">Monitoreo</a></li>
+				<li><a href="#">Registro</a></li>
+				<li><a href="#">Mediciones</a></li>
+				<li><a href="#">Perfil</a></li>
+				<li><a href="#">Ajustes</a></li>
+			</ul>
+		</div>
+		
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="first-slide" src="images/img1.jpg" alt="slide uno">
+					<div class="container">
+						<div class="carousel-caption d-none d-md-block text-left">
+							
+						</div>					
+					</div>					
+				</div>
+				<div class="carousel-item">
+					<img class="second-slide" src="images/img2.jpg" alt="slide uno">
+					<div class="container">
+						<div class="carousel-caption d-none d-md-block text-left">
+							
+						</div>					
+					</div>	
+				</div>
+				<div class="carousel-item">
+					<img class="second-slide" src="images/img3.png" alt="slide uno">
+					<div class="container">
+						<div class="carousel-caption d-none d-md-block text-left">
+							
+						</div>					
+					</div>	
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+				<img src="images/flechaIzq.png">
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+				<img src="images/flechaDer.png">
+			</a>
+		</div>
+
+
+
+
+		<div id="pie">
+			<footer>
+				<div id="pieContacto">
+					<h3>Contactanos</h3>
+					<p>
+						<strong>Tel.:</strong> 5155717
+						<br>
+						<strong>Email:</strong> Omarcr.96@gmail.com
+						<br> 
+						<strong>Dirección:</strong> XXXXXXXXXX
+					</p>
+				</div> 
+				<div id="pieSiguenos">
+					<h3>Síguenos</h3>
+					<a href="#"><img src="Images/instagram.png"></a>
+					<a href="#"><img src="Images/facebook.png"></a>
+					<a href="#"><img src="Images/whatsapp.png"></a>
+					<a href="#"><img src="Images/twitter.png"></a>
+				</div>
+				<div id="pieAcercaDe">
+					<h3>Acerca de</h3>
+					<p>
+						Soy la doctora Gloria Ruiz Guzmán,<br>  a traves de esta página podras tener<br> consultas directamente conmigo.
+					</p>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+</body>
+</html>

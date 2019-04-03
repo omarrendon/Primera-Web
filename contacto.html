@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="contacto.css">
+	<script src="contactoValidar.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="icon" href="https://img.icons8.com/color/50/000000/hospital-3.png">
+
+
+</head>
+<body id="principal">
+	<div id="barraNavegacion">
+		<nav>
+			<a href="Inicio.html"><img src="Images/menulogo.png" id="menuLogo"></a>
+			<li><a href="Inicio.html" style="color: #FFFFFF;">Home</a></li>
+			<li><a href="quienesSomos.html" style="color: #FFFFFF;">¿Quiénes somos?</a></li>
+			<li><a href="Login.html" style="color: #FFFFFF;">Iniciar sesion</a></li>
+			<li><a href="Login.html" style="color: #FFFFFF;">Registrarse</a></li>
+			<li><a href="#" style="color: #FFFFFF;">Contáctanos</a></li>
+		</nav>
+	</div>
+
+	<div id="formulario">
+		<form method="post" onsubmit="return validarForm();">
+			<h2>CONTACTO</h2>
+			<p>Cualquier duda o pregunta, favor de comunicarse de inmediatemente y será respondido a la brevedad.</p>
+			<input type="text" name="nombreContacto" placeholder="Nombre(s)" size="30" id="nombreContacto" >
+			<input type="text" name="apellidoContacto" placeholder="Apellidos" size="30" id="ápellidoContacto" >
+			<input type="email" name="correoContacto" placeholder="Correo Electronico" size="80" id="correoContacto" >
+			<br>
+			<textarea name="textarea" rows="10" cols="50" id="textarea">Escriba su duda o queja</textarea>
+			<br>
+			<input type="submit" value="Enviar" id="botonContacto">
+		</form>
+	</div>
+
+	<div id="pie">
+			<footer>
+				<div id="pieContacto">
+					<h3>Contactanos</h3>
+					<p>
+						<strong>Tel.:</strong> 5155717
+						<br>
+						<strong>Email:</strong> Omarcr.96@gmail.com
+						<br> 
+						<strong>Dirección:</strong> XXXXXXXXXX
+					</p>
+				</div>
+				<div id="pieSiguenos">
+					<h3>Síguenos</h3> 
+					<a href="#"><img src="Images/instagram.png"></a>
+					<a href="#"><img src="Images/facebook.png"></a>
+					<a href="#"><img src="Images/whatsapp.png"></a>
+					<a href="#"><img src="Images/twitter.png"></a>
+				</div>
+				<div id="pieAcercaDe">
+					<h3>Acerca de</h3>
+					<p>
+						Soy la doctora Gloria Ruiz Guzmán,<br>  a traves de esta página podras tener<br> consultas directamente conmigo.
+					</p>
+				</div>
+			</footer>
+		</div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Preguntas Frecuentes</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilosPreguntas.css">
+	<script src="preguntasJS.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="icon" href="https://img.icons8.com/color/50/000000/hospital-3.png">
+</head>
+<body id="principal">
+	<div id="barraNavegacion">
+		<nav>
+			<a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><img src="Images/menulogo.png" id="menuLogo"></a>
+			<li><a href="Inicio.html" style="color: #FFFFFF;">Inicio</a></li>
+			<li><a href="Login.html" style="color: #FFFFFF;">Iniciar sesion</a></li>
+			<li><a href="Login.html" style="color: #FFFFFF;">Registrarse</a></li>
+			<li><a href="contacto.html" style="color: #FFFFFF;">Contactanos</a></li>
+			<li><a href="quienesSomos.html" style="color: #FFFFFF;">¿Quines somos?</a></li>
+			Buscar &nbsp; <input type="text" name="busqueda"  id="barraBusqueda" />
+		</nav>
+	</div>
+	<div id="preguntas">
+		<nav>
+			<li><a href="#" onclick="planes();">Planes de Ventas</a> </li>
+			<li><a href="#" onclick="enfermedades();">Enfermedades Tratadas</a></li>
+			<li><a href="#" onclick="servicios();">Servicios Brindados</a></li>
+		</nav>
+	</div>
+	<div id="contenido">
+		<div id="default">
+			
+			<div id="tituloEnfermedades">
+				<h2> Tratamiento de enfermedades</h2>
+				<img src="Images/enfermedades.png">
+			</div>
+			<div id="contenidoContenedores1">
+				<p>
+					"Los principales problemas de salud pública en México son las enfermedades crónicas no transmisibles como la diabetes, obesidad e hipertensión. En nuestro país, las autoridades sanitarias han hecho frente a esta situación con la Estrategia Nacional para la Prevención y Control del Sobrepeso, la Obesidad y la Diabetes.""
+
+					<br>
+					<h6>-De acuerdo con la OMS.</h6>
+				</p>
+			</div>
+			<div class="contenidoContenedores">
+				<h2>Diabetes</h2>
+				<span>Cuidados</span>
+				<p>
+					<li>Buena alimentación</li>
+					<li>Control de la presión</li>
+					<li>Exámenes continuamente</li>
+				</p>
+				<span>Prevención</span>
+				<p>
+					<li>Ejercicio</li>
+					<li>Chequeo de peso</li>
+					<li>Alimentación Balanceada</li>
+				</p>
+			</div>
+			<div class="contenidoContenedores">
+				<h2>Cancer</h2>
+				<span>Cuidados</span>
+				<p>
+					<li>Buena alimentación</li>
+					<li>Monitore del paciente</li>
+					<li>Exámenes continuamente</li>
+				</p>
+				<span>Prevención</span>
+				<p>
+					<li>Ejercicio</li>
+					<li>Revisiones constantemente</li>
+					<li>Alimentación Balanceada</li>
+				</p>
+			</div>
+			<div class="contenidoContenedores">
+				<h2>Hipertensión</h2>
+				<span>Cuidados</span>
+				<p>
+					<li>Buena alimentación</li>
+					<li>Control de la presión</li>
+					<li>Exámenes </li>
+				</p>
+				<span>Prevención</span>
+				<p>
+					<li>Actividad Física</li>
+					<li>Reducción de bebidas alcholicas</li>
+					<li>Alimentación Balanceada</li>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="pie">
+			<footer>
+				<div id="pieContacto">
+					<h3>Contactanos</h3>
+					<p>
+						<strong>Tel.:</strong> 5155717
+						<br>
+						<strong>Email:</strong> Omarcr.96@gmail.com
+						<br> 
+						<strong>Dirección:</strong> XXXXXXXXXX
+					</p>
+				</div>
+				<div id="pieSiguenos">
+					<h3>Síguenos</h3>
+					<img src="Images/instagram.png">
+					<img src="Images/facebook.png"> 
+					<img src="Images/whatsapp.png">
+					<img src="Images/twitter.png">
+				</div>
+				<div id="pieAcercaDe">
+					<h3>Acerca de</h3>
+					<p>
+						Soy la doctora Gloria Ruiz Guzmán,<br>  a traves de esta página podras tener<br> consultas directamente conmigo.
+					</p>
+				</div>
+			</footer>
+		</div>
+	<script>
+		function planes() {
+			document.getElementById("contenido").style.background = '#FFFFFF';
+			document.getElementById("contenido").innerHTML = "<h2>Planes para todas las necesidades de salud. Elige el tuyo.</h2><img src='Images/planes.png'><button id='b1'>NORMAL</button><button id='b2'>VIP</button><button id='b3'>PREMIUM</button><br><br><p>*Aceptamos tarjeta de crédito y algunas tarjetas de débito dependiendo de tu banco<br>* Este plan es de tipo mensual según el día en que se inscribió</p>";
+		}
+		function enfermedades() {
+			document.getElementById("contenido").style.background = '#FFFFFF';
+			document.getElementById("contenido").innerHTML = "<div id='tituloEnfermedades'><h2>Tratamiento de enfermedades</h2><img src='Images/enfermedades.png'></div><div id='contenidoContenedores1'><p>'Los principales problemas de salud pública en México son las enfermedades crónicas no transmisibles como la diabetes, obesidad e hipertensión. En nuestro país, las autoridades sanitarias han hecho frente a esta situación con la Estrategia Nacional para la Prevención y Control del Sobrepeso, la Obesidad y la Diabetes.'<br><h6>-De acuerdo con la OMS.</h6></p></div><div class='contenidoContenedores'><h2>Diabetes</h2><span>Cuidados</span><p><li>Buena alimentación</li><li>Control de la presión</li><li>Exámenes continuamente</li></p><spanPrevención</span><p><li>Ejercicio</li><li>Chequeo de peso</li><li>Alimentación Balanceada</li></p></div><div class='contenidoContenedores'><h2>Cancer</h2><span>Cuidados</span><p><li>Buena alimentación</li><li>Monitore del paciente</li><li>Exámenes continuamente</li></p><span>Prevención</span><p><li>Ejercicio</li><li>Revisiones constantemente</li><li>Alimentación Balanceada</li></p></div><div class='contenidoContenedores'><h2>Hipertensión</h2><span>Cuidados</span><p><li>Buena alimentación</li><li>Control de la presión</li><li>Exámenes </li></p><span>Prevención</span><p><li>Actividad Física</li><li>Reducción de bebidas alcholicas</li><li>Alimentación Balanceada</li></p></div>"
+		}
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ventana de registro</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilosLogin.css">
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+	<link rel="icon" href="https://img.icons8.com/color/50/000000/hospital-3.png">
+	<script src="validar.js"></script>
+</head>
+<body id="principal">
+	<div id="barraNavegacion">
+		<nav>
+			<li><a href="Inicio.html" style="color: #FFFFFF;">Inicio</a></li>
+			<li><a href="quienesSomos.html" style="color: #FFFFFF;">¿Quiénes somos?</a></li>
+			<li><a href="preguntasFrecuentes.html" style="color: #FFFFFF;"> Preguntas Frecuentes</a></li>
+			<li><a href="contacto.html" style="color: #FFFFFF;">Contáctanos</a> </li>
+			Buscar &nbsp; <input type="text" name="busqueda" id="cajaBusqueda" autofocus required/>
+		</nav>
+	</div>
+	<div id="registroSesion">
+		<aside>
+			<h2 id="loginTituo">Login</h2>
+			<img src="Images/log.png" id="imagenInicioSesion">
+			<input type="text" name="userName" placeholder="Corro electronico" size="30" id="loginUsuario">
+			<input type="password" name="contraseña" placeholder="password" id="loginPassword" size="30">
+			<input type="submit" value="LOGIN" id="loginButton">
+			
+		</aside>
+	</div>
+	<div id="loginRegistro">
+		<form action="registrar.php" method="post" class="form-register" onsubmit="return validar();">
+			<h2>Registrate</h2>
+			<input type="text" name="loginNombre" placeholder="Nombre(s)" size="30" id="loginNombre" >
+			<input type="text" name="loginApellidos" placeholder="Apellidos" size="35" id="loginApellidos" >
+			<input type="email" name="loginCorreo" placeholder="Correo Electronico" size="78" id="loginCorreo" >
+			<input type="password" name="loginPasswordRegistro" placeholder="password" id="loginPasswordRegistro" size="40">
+			Hombre <input type="radio" name="sexo" id="registroHombre" required="">
+			Mujer <input type="radio" name="sexo" id="registroMujer" required="">
+			<h3 id="registroFechaNacimiento">Fecha de Nacimiento</h3>
+			<input type="date" name="date" id="registroFecha">
+			<input type="submit" value="Registrar" id="registroRegistrase">
+		</form>
+	</div>
+
+</body>
+</html>
